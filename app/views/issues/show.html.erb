@@ -65,7 +65,7 @@
   end
 
   unless @issue.disabled_core_fields.include?('start_date')
-    rows.right l(:field_start_date), distance_of_time_in_words_to_now(@issue.start_date)
+    rows.right l(:label_issue_started), distance_of_time_in_words_to_now(@issue.start_date)
   end
 end %>
 <%= render_custom_fields_rows(@issue) %>
