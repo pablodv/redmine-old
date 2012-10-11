@@ -65,7 +65,7 @@
   end
 
   unless @issue.disabled_core_fields.include?('created_on')
-    rows.left l(:label_issue_created), distance_of_time_in_words_to_now(@issue.created_on)
+    rows.left l(:label_issue_added), distance_of_time_in_words_to_now(@issue.created_on)
   end
 end %>
 <%= render_custom_fields_rows(@issue) %>
