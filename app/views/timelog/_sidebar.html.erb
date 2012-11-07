@@ -2,4 +2,5 @@
 
 <% @queries.each do |q| %>
   <%= link_to q.name, report_project_time_entries_path(@project, query_id: q.id) %>
+  <br/>
 <% end %>
